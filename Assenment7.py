@@ -5,11 +5,14 @@
 #Python Exercises
 #Original String : A%^!B#*CD
 
-special_chars = ['*','^']
+special_chars = ['*','^','%','!','#']
 abc_string = "  Pyth*^on Exercis^es "
+xyz_string = " A%^!B#*CD "
 print("Original String : " + abc_string)
+print("Second Original String: " + xyz_string)
 
 for i in special_chars:
     abc_string = abc_string.replace(i, '')
-print(abc_string)    
-
+    xyz_string = xyz_string.replace(i, '')
+print("After removing unwanted characters:",abc_string)  
+print("After removing unwanted characters:",xyz_string)  
